@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 10, 2019 at 03:20 PM
+- Server version: 10.1.37-MariaDB
+- PHP Version: 7.3.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="google_keep" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `customer_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `first_name` varchar(10) NOT NULL,
+                  `last_name` varchar(15) NOT NULL,
+                  `contact` int(10) NOT NULL,
+                  `email` varchar(30) NOT NULL,
+                  `password` varchar(10) NOT NULL,
+                  PRIMARY KEY (`customer_id`,`email`,`contact`) USING BTREE
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'google_keep'
+    -->
+    <database name="google_keep">
+        <!-- Table users -->
+        <table name="users">
+            <column name="customer_id">1</column>
+            <column name="first_name">manish</column>
+            <column name="last_name">yadav</column>
+            <column name="contact">2147483647</column>
+            <column name="email">manishyadav8286@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">2</column>
+            <column name="first_name">mukesh</column>
+            <column name="last_name">yadav</column>
+            <column name="contact">2147483647</column>
+            <column name="email">my@gmail.com</column>
+            <column name="password">12345</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">3</column>
+            <column name="first_name">vimles</column>
+            <column name="last_name">bind</column>
+            <column name="contact">2147483647</column>
+            <column name="email">vb@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">4</column>
+            <column name="first_name">vivek</column>
+            <column name="last_name">bhoye</column>
+            <column name="contact">345234243</column>
+            <column name="email">vivekbhoye@gmail.com</column>
+            <column name="password">vivek@123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">5</column>
+            <column name="first_name">abc</column>
+            <column name="last_name">pqr</column>
+            <column name="contact">1234567890</column>
+            <column name="email">abc@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">6</column>
+            <column name="first_name">yash</column>
+            <column name="last_name">Jain</column>
+            <column name="contact">123456</column>
+            <column name="email">aaa@gmail.com</column>
+            <column name="password">111</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">8</column>
+            <column name="first_name">my</column>
+            <column name="last_name">my</column>
+            <column name="contact">2147483647</column>
+            <column name="email">manishyadav8286@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">9</column>
+            <column name="first_name">my</column>
+            <column name="last_name">my</column>
+            <column name="contact">2147483647</column>
+            <column name="email">manishyadav8286@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+        <table name="users">
+            <column name="customer_id">10</column>
+            <column name="first_name">my</column>
+            <column name="last_name">my</column>
+            <column name="contact">2147483647</column>
+            <column name="email">manishyadav8286@gmail.com</column>
+            <column name="password">123</column>
+        </table>
+    </database>
+</pma_xml_export>

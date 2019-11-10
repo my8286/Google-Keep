@@ -1,0 +1,191 @@
+
+body{
+    margin:0px
+}
+
+nav{
+    height:3%;
+    background-color:white;
+    color:black;
+    width:100%;
+    position: fixed;
+    z-index:100;
+    /* background-image: url("../img/ice_cream.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-size: 100%;
+    
+}
+
+section{
+    height:85%;
+    width:100%;
+    /* background-image: url("../img/bread-chip.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top:0px;
+    position:absolute;
+    z-index:1;
+    /* box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.1); */
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top:1%;
+  overflow: hidden;
+  height:80px;
+  border-bottom:1px solid;
+  border-bottom-color: rgba(0,0,0, 0.2);
+  /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); */
+  position:relative;
+  z-index:200;
+  background-color:white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+input {
+    outline:none;
+    outline-width: 0;
+    text-indent:20px;
+    font-size:20px;
+    height:46px;
+    width:280%;
+    border-radius:5px;
+    border: 0px solid black;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9); */
+    background: rgba(0, 0, 0, 0.1);
+}
+#input_img {
+    position:absolute;
+    font-size:20px;
+    margin-left:-110px;
+    margin-top:9px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  height: 85%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top:  0px;
+}
+
+.sidebar a {
+  padding: 24px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+#main-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:red; */
+    height: 100%;
+    width:75%;
+    margin-left:12%;
+    margin-top:10%;
+    /* border-radius:2% 2% 2% 2%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9); */
+    
+}
+
+.note{
+    margin-top:10%;
+    width:50%;
+    padding:0%;
+    top:0px;
+    position:absolute;
+    z-index:2
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.rotateimg {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.bottom img{
+  height:17px;
+  width:17px;
+  margin-left:25px;
+}
+.border{
+  border-radius:5px 5px 5px 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+}
+.pinned{
+   width:30%;
+  padding:10px;
+  margin:5px;
+  float:left;
+}
+.pinned div{
+   width:30%;
+  padding:2px;
+  margin:5px;
+  float:left;
+  overflow: auto;
+}
+.outline{
+  outline:none;
+  outline-width: 0;
+}
+#input-note-second, #unpin{
+  display:none
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
